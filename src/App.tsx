@@ -14,7 +14,7 @@ import './index.css'
 export default function App() {
   return (
     <BrowserRouter basename="/Application-CAPEB-2026">
-      <div className="flex h-screen overflow-hidden bg-gray-50">
+      <div className="flex h-screen overflow-hidden app-bg">
         <Sidebar />
         <div className="flex-1 flex flex-col overflow-hidden min-w-0">
           <Header />
@@ -34,13 +34,15 @@ export default function App() {
           position="bottom-right"
           toastOptions={{
             style: {
-              background: '#1e293b',
-              color: '#f8fafc',
+              background: '#0d1530',
+              color: '#f0f4ff',
               borderRadius: '12px',
-              fontSize: '14px',
+              fontSize: '13px',
               fontWeight: '500',
+              border: '1px solid rgba(255,255,255,0.1)',
+              boxShadow: '0 20px 60px rgba(0,0,0,0.5)',
             },
-            success: { iconTheme: { primary: '#10b981', secondary: '#fff' } },
+            success: { iconTheme: { primary: '#34d399', secondary: '#060b18' } },
             error: { iconTheme: { primary: '#e2001a', secondary: '#fff' } },
           }}
         />
